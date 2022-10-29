@@ -1,8 +1,15 @@
+import React from "react";
+import Container from "./components/Container";
+import Sidebar from "./components/Sidebar";
+import { AppContainer } from "./styles";
 
 function App() {
+
   return (
-    <div>
-    </div>
+    <AppContainer>
+      <Sidebar />
+      <Container />
+    </AppContainer>
   );
 }
 

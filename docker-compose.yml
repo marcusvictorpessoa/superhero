@@ -9,6 +9,8 @@ services:
       - ".:/app"
       - "/app/node_modules"
     ports:
-      - "3004:3000"
+      - "3000:3000"
     environment:
-      - NODE_ENV=development
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+      #WATCHPACK_POLLING: "true"
